@@ -8,5 +8,25 @@
     "lucide-react": "^0.525.0",
     "mongoose": "^8.16.1"
   },
-  "type": "module"
+  "type": "module",
+  "name": "fccbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix Frontend/note-front  && npm run build --prefix Frontend/note-front",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alchemist-10/thinkboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alchemist-10/thinkboard/issues"
+  },
+  "homepage": "https://github.com/Alchemist-10/thinkboard#readme"
 }
