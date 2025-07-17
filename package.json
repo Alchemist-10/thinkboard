@@ -16,7 +16,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix backend && npm install --prefix Frontend/note-front  && npm run build --prefix Frontend/note-front",
+    "build": "cd Frontend/note-front && npm install && npm run build && cd ../../backend && npm install",
     "start": "npm run start --prefix backend"
   },
   "repository": {
