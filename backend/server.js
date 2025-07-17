@@ -12,14 +12,14 @@ const app = express();
 const __dirname=path.resolve()
 
  //middle ware
- if(process.env.NODE_ENV!==  "production")
-{ app.use(cors(
-   {
-      origin:["http://localhost:5176",
-      "http://localhost:5173",
-      "http://localhost:5174"]
-   }
-))}
+//  if(process.env.NODE_ENV===  "production")
+// { app.use(cors(
+//    {
+//       origin:["http://localhost:5176",
+//       "http://localhost:5173",
+//       "http://localhost:5174"]
+//    }
+// ))}
  app.use(express.json())// parses json requests so that we cna access title and content or 
  // whatever key values of the object...
 
